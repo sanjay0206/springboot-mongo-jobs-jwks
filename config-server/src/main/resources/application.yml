@@ -1,0 +1,37 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: native
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configurations
+  output:
+    ansi:
+      enabled: always
+
+
+#server:
+#  port: 8888
+#
+#spring:
+#  application:
+#    name: config-server
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/sanjay0206/university-config-server.git
+#          search-paths: configurations
+#          clone-on-start: true
+#          default-label: master
+#  output:
+#    ansi:
+#      enabled: always
+
+

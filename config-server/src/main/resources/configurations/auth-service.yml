@@ -1,0 +1,13 @@
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+
+# Authorization Server
+spring:
+  security:
+    oauth2:
+      authorization-server:
+        jwt:
+          issuer-uri: http://localhost:8083/api/auth
